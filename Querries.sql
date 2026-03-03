@@ -1,0 +1,27 @@
+-- Part 1: converting the table in the first normal form (1NF).
+ CREATE DATABASE CLUB_MEMBERSHIP_MANAGEMENT;
+  USE CLUB_MEMBERSHIP_MANAGEMENT;
+   CREATE TABLE StudentClubs (
+         StudentID INT,
+         StudentName VARCHAR(50),
+         Email VARCHAR(100),
+         ClubName VARCHAR(50),
+         ClubRoom VARCHAR(10),
+         ClubMentor VARCHAR(50),
+         JoinDate DATE,
+         PRIMARY KEY (StudentID, ClubName)
+     );
+      INSERT INTO StudentClubs (StudentID, StudentName, Email, ClubName, ClubRoom, ClubMentor, JoinDate) VALUES
+     (1, 'Asha', 'asha@email.com', 'Music Club', 'R101', 'Mr. Raman', '2024-01-10'),
+     (2, 'Bikash', 'bikash@email.com', 'Sports Club', 'R202', 'Ms. Sita', '2024-01-12'),
+     (1, 'Asha', 'asha@email.com', 'Sports Club', 'R202', 'Ms. Sita', '2024-01-15'),
+     (3, 'Nisha', 'nisha@email.com', 'Music Club', 'R101', 'Mr. Raman', '2024-01-20'),
+     (4, 'Rohan', 'rohen@email.com', 'Drama Club', 'R303', 'Mr. Kiran', '2024-01-18'),
+     (5, 'Suman', 'suman@email.com', 'Music Club', 'R101', 'Mr. Raman', '2024-01-22'),
+     (2, 'Bikash', 'bikash@email.com', 'Drama Club', 'R303', 'Mr. Kiran', '2024-01-25'),
+     (6, 'Pooja', 'pooja@email.com', 'Sports Club', 'R202', 'Ms. Sita', '2024-01-27'),
+     (3, 'Nisha', 'nisha@email.com', 'Coding Club', 'Lab1', 'Mr. Anil', '2024-01-28'),
+     (7, 'Aman', 'aman@email.com', 'Coding Club', 'Lab1', 'Mr. Anil', '2024-01-30');
+   SELECT * FROM StudentClubs;
+
+-- Part 2: Converting the table in the second normal form (2NF).
