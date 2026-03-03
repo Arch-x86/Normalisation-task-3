@@ -2,34 +2,42 @@
 Normalization is the process of organizing your data in a database to remove redundancy and ensure consistency. It's like reorganizing that notebook into a structured filing system where each piece of information is stored in exactly one place.
 
 In technical terms: normalization is a systematic approach to decomposing tables with anomalies into smaller, well-structured tables that follow specific rules. The result is a database where data is stored efficiently, reliably, and without unnecessary duplication.
-
+# 
 # Tools used
 1. Docker 
 2. Myql
 
+
 # steps to create a Mysql server in the docker for normalisation.
 
-Step 1: we have to pull the image of mysql in the docker.
+## Step 1: we have to pull the image of mysql in the docker.
 To do that first we have to open the powershell or cmd and run docker in the background. After that we have to enter the below command in the powershel.
 ```text
 docker pull mysql:8.0
 ```
 <img src="./Diagrams/pulling.png" width="800" height="400">
 
-step 2: Running the image in the docker:
+## step 2: Running the image in the docker:
 After pulling the image we have to run it in the docker:
 ```text
  docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root --name mysql mysql:8.0
 ```
+
 <img src="./Diagrams/Running.png" width="800" height="400">
 
-Step 3: Executing the mysql
+## Step 3: Executing the mysql
 After running the image we have to execute it. for that we have to enter this command:
 ```text
  docker exec -it mysql mysql -u root -p
   ```
+
 <img src="./Diagrams/Executing.png" width="800" height="400">
 
 Now our mysql server is ready. We can use it to normalise the table.
 
-s
+## Normalising the database in 1NF
+We dont have to normalise the table into 1NF because it is already in the 1NF form. 
+
+<img src="./Diagrams/1NF.png" width="800" height="400">
+
+
