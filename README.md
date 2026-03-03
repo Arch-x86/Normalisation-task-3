@@ -48,3 +48,23 @@ StudentID   PRIMARY KEY,
 StudentName   VARCHAR,
 Email         VARCHAR   
 ```
+<img src="./Diagrams/Student.png" width="800" height="400">
+
+
+After that we have to create another table named Clubs to seperate Clubroom, clubname and clubmentor. It is so because Clubroom and clubMentor depends upon the clubname.
+```text
+ClubName    PRIMARY KEY,
+ClubRoom     VARCHAR,
+ClubMentor   VARCHAR
+```
+<img src="./Diagrams/Clubs.png" width="800" height="400">
+
+At last we have to create a Registrations table which will link Student to Clubs. The data in this table will depend upon both Students and CLub.
+```text
+(StudentID, CLubname)    PRIMARY KEY
+StudentID                 FOREIGN KEY
+Students(StudentID)       REFERENCES
+Clubname                  FOREIGN KEY
+Clubs(Clubname)           REFERENCES
+```
+<img src="./Diagrams/Registration.png" width="800" height="400">
