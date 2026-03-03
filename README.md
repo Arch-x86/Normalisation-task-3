@@ -43,7 +43,7 @@ We dont have to normalise the table into 1NF because it is already in the 1NF fo
 ## Normalizing the table into 2NF. 
  In order to normalize the table into 2NF form. we have to make sure that the Each attribute in the table must depend upon the whole key, not just part of it.
   So we must first create a Students table because StudentName and their email depend upon Student.
-```bash
+```text
 StudentID   PRIMARY KEY,
 StudentName   VARCHAR,
 Email         VARCHAR   
