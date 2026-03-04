@@ -103,4 +103,3 @@ We will be also inserting a new club in the Club table. The Club name will be Ph
 Here we will join the all three table and only diaply StudentName , ClubName and JoinDate from these tables. Then this table becomes like this:
 
 <img src="./Diagrams/Extract.png" width="600" height="600">
-
