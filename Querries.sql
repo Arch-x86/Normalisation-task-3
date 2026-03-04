@@ -115,3 +115,8 @@ JOIN Students s ON r.StudentID = s.StudentID
 JOIN Clubs c ON r.ClubName = c.ClubName
 JOIN Staff st ON c.ClubRoom = st.ClubRoom
 ORDER BY s.StudentID;
+
+-- Testing the database by inserting new data
+ INSERT INTO Students (StudentID, StudentName, Email)
+  VALUES (8, 'Ankit', 'ankit@email.com');
+

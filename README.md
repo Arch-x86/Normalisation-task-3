@@ -80,4 +80,15 @@ Then the Clubs table changes to:
 
 Now when we combine all the four table as one. It becomes like this.
 
-<img src="./Diagrams/3NF.png" width="800" height="400">
+<img src="./Diagrams/3NF.png" width="800" height="600">
+
+# testing querries in the database:
+We are going to test the database by inserting a new Student in the students table.
+we will insert a new student named "Ankit", studentID=8 and email=ankit@gmail.com.
+
+<img src="./Diagrams/test1.png" width="800" height="600">
+
+We will be also inserting a new club in the Club table. The Club name will be Photography club and clubroom will be "R303"
+
+
+<img src="./Diagrams/test2.png" width="800" height="600">
