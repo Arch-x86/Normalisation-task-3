@@ -101,4 +101,17 @@ SELECT * FROM Clubs;
 SELECT * FROM Students;
 SELECT * FROM Registrations;
 
-
+-- to view the all 4 tables as one 
+SELECT 
+    s.StudentID, 
+    s.StudentName, 
+    s.Email, 
+    c.ClubName, 
+    st.ClubRoom, 
+    st.ClubMentor, 
+    r.JoinDate
+FROM Registrations r
+JOIN Students s ON r.StudentID = s.StudentID
+JOIN Clubs c ON r.ClubName = c.ClubName
+JOIN Staff st ON c.ClubRoom = st.ClubRoom
+ORDER BY s.StudentID;

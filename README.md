@@ -68,3 +68,16 @@ Clubname                  FOREIGN KEY
 Clubs(Clubname)           REFERENCES
 ```
 <img src="./Diagrams/Registration.png" width="600" height="400">
+
+## Normalizinf the table in 3NF.
+There are still some transitive dependency left in the table. So we must remove those deoendenct to make the table in 3NF form. In order to do that first we have to create a staff table because the clubmentor attribute in the club table actually depended upon the clubroom not clubname.So we moved the clubmentor to the staff table. Which removed the transitive dependency.
+
+<img src="./Diagrams/staff.png" width="600" height="400">
+
+Then the Clubs table changes to:
+
+<img src="./Diagrams/Club2.png" width="600" height="400">
+
+Now when we combine all the four table as one. It becomes like this.
+
+<img src="./Diagrams/3NF.png" width="600" height="400">
