@@ -120,3 +120,6 @@ ORDER BY s.StudentID;
  INSERT INTO Students (StudentID, StudentName, Email)
   VALUES (8, 'Ankit', 'ankit@email.com');
 
+ INSERT INTO Clubs (ClubName, ClubRoom)
+  VALUES ('Photography Club', 'R303');
+  
