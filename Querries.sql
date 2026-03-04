@@ -124,3 +124,12 @@ ORDER BY s.StudentID;
  INSERT INTO Clubs (ClubName, ClubRoom)
   VALUES ('Photography Club', 'R303');
     SELECT * FROM Clubs;
+    
+-- TO DISPLAY ONLY StudentName,ClubName and JoinDate form all 3 tables as one.
+SELECT 
+    s.StudentName, 
+    c.ClubName, 
+    r.JoinDate
+FROM Registrations r
+JOIN Students s ON r.StudentID = s.StudentID
+JOIN Clubs c ON r.ClubName = c.ClubName;
