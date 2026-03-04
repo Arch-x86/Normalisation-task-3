@@ -119,7 +119,8 @@ ORDER BY s.StudentID;
 -- Testing the database by inserting new data
  INSERT INTO Students (StudentID, StudentName, Email)
   VALUES (8, 'Ankit', 'ankit@email.com');
+  SELECT * FROM Students;
 
  INSERT INTO Clubs (ClubName, ClubRoom)
   VALUES ('Photography Club', 'R303');
-  
+    SELECT * FROM Clubs;

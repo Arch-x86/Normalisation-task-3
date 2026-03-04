@@ -97,3 +97,10 @@ We will be also inserting a new club in the Club table. The Club name will be Ph
 
 
 <img src="./Diagrams/test2.png" width="600" height="600">
+
+# joining the Students, Clubs and Registrations table and only displaying the StudentName, ClubName and JoinDate.
+
+Here we will join the all three table and only diaply StudentName , ClubName and JoinDate from these tables. Then this table becomes like this:
+
+<img src="./Diagrams/Extract.png" width="600" height="600">
+
