@@ -77,4 +77,28 @@ SELECT * FROM Students;
 SELECT * FROM Clubs;
 SELECT * FROM Registrations;
 
+-- Part 3: converting the table in the third normal form (3NF).
+CREATE TABLE Staff (
+    ClubRoom VARCHAR(10) PRIMARY KEY,
+    ClubMentor VARCHAR(50)
+);
+
+INSERT INTO Staff (ClubRoom, ClubMentor) VALUES
+('R101', 'Mr. Raman'),
+('R202', 'Ms. Sita'),
+('R303', 'Mr. Kiran'),
+('Lab1', 'Mr. Anil');
+
+ALTER TABLE Clubs DROP COLUMN ClubMentor;
+
+ALTER TABLE Clubs 
+ADD CONSTRAINT fk_room 
+FOREIGN KEY (ClubRoom) REFERENCES Staff(ClubRoom);
+
+-- TO verify the data in the new table after 3NF normalization.
+SELECT * FROM Staff;
+SELECT * FROM Clubs;
+SELECT * FROM Students;
+SELECT * FROM Registrations;
+
 
