@@ -7,6 +7,11 @@ In technical terms: normalization is a systematic approach to decomposing tables
 1. Docker 
 2. Myql
 
+# Learning Objectives.
+1. how normalization works,
+2. benefits of normalization,
+3. how is an E-R diagram constructed,
+4. how does normalization helps to ensure accuracy and reliability of data.
 
 # steps to create a Mysql server in the docker for normalisation.
 
@@ -103,3 +108,9 @@ We will be also inserting a new club in the Club table. The Club name will be Ph
 Here we will join the all three table and only diaply StudentName , ClubName and JoinDate from these tables. Then this table becomes like this:
 
 <img src="./Diagrams/Extract.png" width="600" height="600">
+
+# lisence
+This is under the MIT-license. To see more about [LICENSE](https://github.com/Arch-x86/Normalisation-task-3/blob/main/LICENSE) HERE.
+
+# Author
+** Ankit Thebe **
