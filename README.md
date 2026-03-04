@@ -3,6 +3,23 @@ Normalization is the process of organizing your data in a database to remove red
 
 In technical terms: normalization is a systematic approach to decomposing tables with anomalies into smaller, well-structured tables that follow specific rules. The result is a database where data is stored efficiently, reliably, and without unnecessary duplication.
 
+
+## Project Structure
+
+```text
+Normalisation-task-3/
+├── Diagrams/          
+├── queries.sql         
+├── LICENSE             
+└── README.md           
+```
+
+# Quick start:
+```text
+git clone https://github.com/Arch-x86/Normalisation-task-3.git
+cd Normalisation-task-3
+```
+
 # Tools used
 1. Docker 
 2. Myql
