@@ -1,8 +1,8 @@
-# Normalisation
+# Normalization
 Normalization is the process of organizing your data in a database to remove redundancy and ensure consistency. It's like reorganizing that notebook into a structured filing system where each piece of information is stored in exactly one place.
 
 In technical terms: normalization is a systematic approach to decomposing tables with anomalies into smaller, well-structured tables that follow specific rules. The result is a database where data is stored efficiently, reliably, and without unnecessary duplication.
-# 
+
 # Tools used
 1. Docker 
 2. Myql
@@ -82,6 +82,11 @@ Now when we combine all the four table as one. It becomes like this.
 
 <img src="./Diagrams/3NF.png" width="800" height="600">
 
+# E-R Diagram of the normalized database.
+The E-R diagram is the graphical representation of the logical structure used in the Normalization.This is the E-R diagram of the normalized database.
+
+<img src="./Diagrams/E-R.png" width="800" height="600">
+
 # testing querries in the database:
 We are going to test the database by inserting a new Student in the students table.
 we will insert a new student named "Ankit", studentID=8 and email=ankit@gmail.com.
@@ -91,4 +96,4 @@ we will insert a new student named "Ankit", studentID=8 and email=ankit@gmail.co
 We will be also inserting a new club in the Club table. The Club name will be Photography club and clubroom will be "R303"
 
 
-<img src="./Diagrams/test2.png" width="800" height="600">
+<img src="./Diagrams/test2.png" width="600" height="600">
